@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Vladimir Verner](https://up.htmlacademy.ru/htmlcss/21/user/684125).
-* Наставник: `Неизвестно`.
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
+
 
 ---
 
