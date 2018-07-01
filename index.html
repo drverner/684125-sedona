@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -22,14 +23,14 @@
 
     <main class="main-container">
       <section class="introduction">
-        <h2 class="hidden">Город Седона</h2>
+        <h2 class="visually-hidden">Город Седона</h2>
         <img class="logo" src="img/background-logo.jpg" height=773 width=1200>
         <h2>Седона — небольшой городок в Аризоне, заслуживающий большего! </h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
 
       <section class="features">
-        <h2 class="hidden">Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <img class="sedona-city" src="sedona-city.svg" width="800" height="400" alt="виды города">
         <img class="sedona-bridge" src="sedona-bridge.svg" width="800" height="400" alt="дьявольский мост">
         <ul class="features-list">
@@ -96,6 +97,35 @@
       Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <a class="button" href="sedona-hotel.html">поиск гостиницы в Седоне</a>
+      <div class="filter-search">
+        <form class="filter-search-form" method="get" action="">
+          <div class="form-content">
+            <label>
+            <span class="search-label">Дата заезда</span>
+            <input type=date name="checkin-date">
+          </label>
+        </div>
+            <div class="form-content">
+          <label>
+            <span class="search-label">Дата выезда</span>
+            <input type=date name="checkout-date">
+          </label>
+        </div>
+          <div class="half-width">
+          <label>
+            <span class="search-label">Взрослые</span>
+            <input type=text name="adult">
+          </label>
+        </div>
+        <div class="half-width">
+        <label>
+          <span class="search-label">Дети</span>
+          <input type=text name="child">
+        </label>
+      </div>
+      <input type=submit value="Найти">
+        </form>
+      </div>
       </section>
       <section class="map">
         <img class="map" src="img/map.jpg" height=590 width=1200>

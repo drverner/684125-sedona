@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+        <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -21,31 +22,40 @@
     </header>
 
     <main class="inner-container">
-    <h2 class="hidden">Выбор аппартаментов</h2>
+    <h2 class="visually-hidden">Выбор аппартаментов</h2>
 <img class="logo" src="img/logo-inner.jpg" height=526 width=1200>
-       <form class="choose-apart" method="get">
-         <div class="infrastructure">
-          <b>Инфраструктура:</b>
+       <div class="hotel-choose-form">
+
+       <form class="filter-hotelchoose-form" method="get" oninput="costrangeoutput.value=costrangeinput.value">
+         <fieldset><legend> <b>Инфраструктура:</b></legend>
+         <div class="filter-hotelchoose-container">
           <ul class="checkbox">
-            <li>бассеин</li>
-            <li>парковка</li>
-            <li>wi-fi</li>
+            <li><input class="filter-input filter-input-checkbox" type=checkbox name="swimmingpool"><span>бассеин</span></li>
+            <li><input class="filter-input filter-input-checkbox" type=checkbox name="parking"><span>парковка</span></li>
+            <li><input class="filter-input filter-input-checkbox" type=checkbox name="wifi"><span>wi-fi</span></li>
           </ul>
         </div>
-       <div class="apart-type">
-          <b>Тип жилья:</b>
-          <ul class="checkbox">
-            <li>гостиница</li>
-            <li>мотель</li>
-            <li>апартаменты</li>
+      </fieldset>
+      <fieldset><legend><b>Тип жилья:</b></legend>
+       <div class="filter-hotels">
+          <ul>
+            <li><input class="filter-input filter-input-checkbox" type=checkbox name="hostel"><span>гостиница</span></li>
+            <li><input class="filter-input filter-input-checkbox" type=checkbox name="motel"><span>мотель</span></li>
+            <li><input class="filter-input filter-input-checkbox" type=checkbox name="appartment"><span>аппартаменты</span></li>
           </ul>
        </div>
-       <div class="cost">
-          <b>Стоимость в сутки (Р):</b>
-          <span class="cost-scroll">от 0 до 3000р</span>
+     </fieldset>
+     <fieldset><legend><b>Стоимость в сутки (Р):</b></legend>
+       <div class="filter-cost-container">
+          <output name="costrangeoutput" class="filter-cost-output">0</output>
        </div>
+       <div class="filter-cost-container">
+       <span>0</span><input type="range" name="costrangeinput" min="0" max="3000" step="500"><span>3000</span>
+     </div>
+     </fieldset>
        <button type="submit" class="show-apart">показать</button>
      </form>
+   </div>
 
        <section class="search">
        <b>Найдено: 3</b>
@@ -53,13 +63,13 @@
        Сортировка:
        </p>
        <ul class="sorted">
-       <li><a href="#" class="sort">по цене</a></li>
-       <li><a href="#" class="sort">по типу</a></li>
-       <li><a href="#" class="sort">по рейтингу</a></li>
+       <li><a href="#" class="button sort-hotel">по цене</a></li>
+       <li><a href="#" class="button sort-hotel">по типу</a></li>
+       <li><a href="#" class="button sort-hotel">по рейтингу</a></li>
        </ul>
          <ul class="arrows">
-       <li><a href="#" class="arrow-left">&lt;</a></li>
-       <li><a href="#" class="arrow-right">&gt;</a></li>
+       <li><a href="#" class="button arrow-left">&lt;</a></li>
+       <li><a href="#" class="button arrow-right">&gt;</a></li>
        </ul>
        </section>
 
