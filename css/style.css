@@ -1,0 +1,302 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-seif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black
+  background-color: #f2f2f2;
+
+}
+body .body-container{
+  background-color: white;
+  margin: 10px;
+  border: 1px solid black;
+  width: 1200px;
+
+}
+
+.hotel-choose-form{
+  height: 526px;
+  width: 1200px;
+  background-image: url("../img/logo-inner.jpg");
+}
+
+a{
+  text-decoration: none;
+}
+
+.header{
+
+}
+
+.container{
+
+}
+.main-navigation{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+}
+
+.site-navigation{
+  list-style: none;
+}
+
+.site-navigation a{
+  color: black;
+}
+
+.site-navigation a:hover
+{
+  color: #81b3d2;
+}
+.site-navigation a:focus,
+{
+  color: #b2b2b2;
+}
+.site-navigation-current a{
+  color: #766357;
+}
+
+.search-results{
+
+}
+
+.introduction{
+  height: 727px;
+  width: 1200px;
+  background-color: black;
+  background-image:  url("../img/lettering-logo.png"), url("../img/frame-logo.png"), url("../img/background-logo.jpg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 50% 135px, bottom, top;
+position: relative;
+}
+
+.introduction-content{
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+
+.introduction h2{
+  text-align: center;
+  size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: black;
+
+}
+.introduction p{
+  text-align: center;
+  size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #b2b2b2;
+}
+
+.features{
+
+
+}
+
+.features-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+
+}
+.feature-item{
+
+margin-top: 0px;
+
+}
+
+.features-list h2{
+  text-align: center;
+  size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: black;
+}
+
+.feature-item-one,
+.feature-item-five{
+  background-color: #81b3d2;
+}
+.feature-item-six,
+.feature-item-seven,
+.feature-item-eight{
+  background-color: #eeeeee;
+}
+.feature-item-one h2,
+.feature-item-five h2{
+  text-align: center;
+  size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: white;
+}
+
+.features-list p,
+.features-list span{
+  text-align: center;
+  size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: #b2b2b2; ;
+}
+
+.feature-item-one p,
+.feature-item-five p,
+.feature-item-one span,
+.feature-item-five span{
+  text-align: center;
+  size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: white;
+}
+
+.booking{
+  text-align: center;
+}
+
+.booking h2{
+  size: 42px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+.booking p{
+  size: 14px;
+  text-align: center;
+  font-weight: normal;
+  color: #696969;
+}
+
+button{
+  font: inherit;
+  text-align: center;
+
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+
+}
+.booking-button{
+  align: center;
+  background-color: #766357;
+
+}
+.booking-button:hover
+{
+  background-color: #604e43;
+}
+.booking-button:focus
+{
+  background-color: #503e33;
+  color: #857871;
+}
+
+.filter-search p{
+  size: 14px;
+  text-align: center;
+  font-weight: normal;
+  color: black;
+}
+
+.filter-search-form input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: 0px;
+}
+.filter-search-form input:hover {
+  background-color:#ebebeb;
+}
+.filter-search-form input:focus {
+  background-color: white;
+}
+
+.footer{
+  text-align: center;
+}
+
+.footer-social-list{
+  list-style: none;
+}
+
+.visit-sedona a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-copyright a{
+  text-decoration: none;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+  text-decoration: none;
+}
+
+.visually-hidden{
+
+}
+.filter-input{
+
+}
+.checkbox{
+
+}
+.filter-hotels {
+
+}
+.filter-search{
+
+}
+.filter-hotelchoose-form{
+
+}
+.filter-hotelsearch-form{
+
+}
+.filter-hotelchoose-container{
+
+}
+.form-content{
+
+}
+.range{
+
+}
+.filter-cost-container{
+
+}
+.button{
+
+}
+.sort-button{
+
+}
+.sort-button-back{
+
+}
+.sort-button-forward{
+
+}
+p .form-item {
+
+}
+button .button-findform{
+
+}
+button .button-filterform{
+
+}

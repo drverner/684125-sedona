@@ -6,27 +6,28 @@
         <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <header class="inner-header">
+  <div class="body-container">
+    <header class="header">
       <a class="main-header-logo" href="index.html">
         <img class="nav-img" src="img/nav-img.png" width="140" height="70" alt="на главную страницу">
       </a>
-      <nav class="main-nav">
-        <ul class="site-nav">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
+          <li class="site-navigation-current"><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="inner-container">
-    <h2 class="visually-hidden">Выбор аппартаментов</h2>
-<img class="logo" src="img/logo-inner.jpg" height=526 width=1200>
-       <div class="hotel-choose-form">
+    <main class="container">
 
+    <h2 class="visually-hidden">Выбор аппартаментов</h2>
+
+       <div class="hotel-choose-form">
        <form class="filter-hotelchoose-form" method="get" oninput="costrangeoutput.value=costrangeinput.value">
+
          <fieldset><legend> <b>Инфраструктура:</b></legend>
          <div class="filter-hotelchoose-container">
           <ul class="checkbox">
@@ -46,16 +47,20 @@
        </div>
      </fieldset>
      <fieldset><legend><b>Стоимость в сутки (Р):</b></legend>
+       <p class="form-content">
        <div class="filter-cost-container">
           <output name="costrangeoutput" class="filter-cost-output">0</output>
-       </div>
-       <div class="filter-cost-container">
+     </p>
+       <p class="form-content">
+         <!-- здесь будет range с двумя регуляторами -->
        <span>0</span><input type="range" name="costrangeinput" min="0" max="3000" step="500"><span>3000</span>
+     </p>
      </div>
      </fieldset>
-       <button type="submit" class="show-apart">показать</button>
+
+     <button type="submit" class="button button-filterform">показать</button>
      </form>
-   </div>
+     </div>
 
        <section class="search">
        <b>Найдено: 3</b>
@@ -68,11 +73,11 @@
        <li><a href="#" class="button sort-hotel">по рейтингу</a></li>
        </ul>
          <ul class="arrows">
-       <li><a href="#" class="button arrow-left">&lt;</a></li>
-       <li><a href="#" class="button arrow-right">&gt;</a></li>
-       </ul>
+       <li><button class="button sort-button sort-button-back" type="button">&lt;</button></li>
+       <li><button class="button sort-button sort-button-forward" type="button">&gt;</button></li>
+        </ul>
        </section>
-
+      <section class="search-results">
        <article class="apart-unit">
          <div class="apart-img">
            <img src="img/amara-resort.jpg"  width=135 height=90 alt="amara resort">
@@ -130,25 +135,25 @@
            <a href="#">Рейтинг</a>
          </div>
        </article>
-
+     </section>
 </main>
 
-    <footer>
-      <div class="visit-sedona">
-        <a href="#">#visitsedona</a>
-     </div>
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-      </div>
-      <div class="footer-copyright">
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      </div>
-    </footer>
+<footer class="footer">
+  <div class="visit-sedona">
+    <a href="#">#visitsedona</a>
+  </div>
+  <div class="footer-social">
+    <ul class="footer-social-list">
+      <li><a class="social-button" href="#">Вконтакте</a></li>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
+    </ul>
+  </div>
+  <div class="footer-copyright">
+    <a class="copyright" href="https://htmlacademy.ru">HTML Academy</a>
+  </div>
+</footer>
 
-
+</div
   </body>
 </html>
