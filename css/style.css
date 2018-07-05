@@ -1,13 +1,14 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-seif;
+  font-family: "PT Sans", Arial, sans-seif;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
   color: black
   background-color: #f2f2f2;
+
 
 }
 body .body-container{
@@ -60,7 +61,7 @@ a{
   color: #b2b2b2;
 }
 .site-navigation-current a{
-  color: #766357;
+
 }
 
 .search-results{
@@ -125,9 +126,11 @@ margin-top: 0px;
   color: black;
 }
 
+
 .feature-item-one,
 .feature-item-five{
   background-color: #81b3d2;
+text-align: center;
 }
 .feature-item-six,
 .feature-item-seven,
@@ -223,13 +226,72 @@ button{
   background-color: white;
 }
 
-.footer{
-  text-align: center;
+
+
+.footer-social,
+.visit-sedona,
+.footer-copyright{
+  display: inline-block;
 }
 
 .footer-social-list{
   list-style: none;
+  display: block;
+
 }
+
+.social-tw,
+.social-fb,
+.social-yt{
+  display: inline-block;
+  min-width: 50px;
+
+}
+
+.social-tw a{
+  background: url("../img/t.png");
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  }
+
+  .social-tw a:hover,
+  .social-tw a:active{
+    background: url("../img/t-active.png");
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    }
+
+    .social-fb a{
+      background: url("../img/f.png");
+      display: inline-block;
+      width: 46px;
+      height: 48px;
+      }
+
+      .social-fb a:hover,
+      .social-fb a:active{
+        background: url("../img/f-active.png");
+        display: inline-block;
+        width: 46px;
+        height: 48px;
+        }
+
+        .social-yt a{
+          background: url("../img/y.png");
+          display: inline-block;
+          width: 46px;
+          height: 48px;
+          }
+
+          .social-yt a:hover,
+          .social-yt a:active{
+            background: url("../img/y-active.png");
+            display: inline-block;
+            width: 46px;
+            height: 48px;
+            }
 
 .visit-sedona a {
   color: black;
@@ -238,13 +300,24 @@ button{
 }
 
 .footer-copyright a{
-  text-decoration: none;
+  background: url("../img/copyright.png");
+  display: block;
+  width: 195px;
+  height: 41px;
 }
 
-.footer-copyright a:hover,
-.footer-copyright a:focus {
-  text-decoration: none;
-}
+.footer-copyright a:hover{
+  background: url("../img/copyright-hover.png");
+  display: block;
+  width: 195px;
+  height: 41px;
+ }
+ .footer-copyright a:active {
+   background: url("../img/copyright-active.png");
+   display: block;
+   width: 195px;
+   height: 41px;
+ }
 
 .visually-hidden{
 
